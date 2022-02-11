@@ -6,6 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <title>Fidia Dashboard</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,11 +26,14 @@
     }
   </script>
 </head>
-<body>
+<body class="font-[Inter] ">
     <!-- First (main) header-->
-    <header>
-        <div class="logo"></div>
-        <nav>
+    <header class="mx-4 flex justify-between items-center h-[64px]">
+        <div class="flex text-gray-900 items-center text-2xl font-medium ">
+            <img class="h-fit mr-3" src="images/logo.svg" alt="">
+            Untitled UI
+        </div>
+        <nav class="hidden">
             <ul>
                 <li></li>
                 <li></li>
@@ -35,29 +43,34 @@
                 <li></li>
             </ul>
         </nav>
-        <div class="actions">
+        <div class="hidden">
             <button><img src="" alt=""></button>
             <img src="" alt="">
             <img src="" alt="">
         </div>
-        <img src="" alt="" class="hamburger-menu">
+        <img src="images/hamburger.svg" alt="" class="w-fit">
     </header>
+    <hr class="text-gray-200 h-0.25">
     <!-- Second (sub) header-->
-    <header>
+    <header class="mx-4 hidden">
         <nav></nav>
         <input type="search" placeholder="Search">
     </header>
     <!-- Main dashboard -->
-    <main>
+    <main class="mx-4">
         <section>
             <div class="onboarding-text">
-                <h1></h1>
-                <p></p>
+                <h1>Welcome back, Olivia</h1>
+                <p>Track, manage and forecast your customers and orders</p>
             </div>
             <div class="actions">
-                <input type="file" name="" id="">
                 <button>
-                    <img src="" alt="">
+                    <img src="images/import.svg" alt="">
+                    Import
+                </button>
+                <button>
+                    <img src="images/add.svg" alt="">
+                    Add
                 </button>
             </div>
         </section>
@@ -66,41 +79,41 @@
         <section>
             <div>
                 <header>
-                    <h4></h4>
-                    <img src="" alt="">
+                    <h4>Total customers</h4>
+                    <img src="images/moreIcon.svg" alt="">
                 </header>
                 <div class="text">
-                    <h1></h1>
-                    <img src="" alt=""><p><span></span></p>
+                    <h1>2,420</h1>
+                    <img src="images/greenArrow.svg" alt=""><p><span>40%</span>vs last month</p>
                 </div>
                 <div class="graph">
-                    <img src="" alt="">
+                    <img src="images/greenChart.png" alt="">
                 </div>
             </div>
             <div>
                 <header>
-                    <h4></h4>
-                    <img src="" alt="">
+                    <h4>Members</h4>
+                    <img src="images/moreIcon.svg" alt="">
                 </header>
                 <div class="text">
-                    <h1></h1>
-                    <img src="" alt=""><p><span></span></p>
+                    <h1>1,210</h1>
+                    <img src="images/redArrow.svg" alt=""><p><span>10%</span>vs last month</p>
                 </div>
                 <div class="graph">
-                    <img src="" alt="">
+                    <img src="images/redChart.png" alt="">
                 </div>
             </div>
             <div>
                 <header>
-                    <h4></h4>
-                    <img src="" alt="">
+                    <h4>Active now</h4>
+                    <img src="images/moreIcon.svg" alt="">
                 </header>
                 <div class="text">
-                    <h1></h1>
-                    <img src="" alt=""><p><span></span></p>
+                    <h1>316</h1>
+                    <img src="images/greenArrow.svg" alt=""><p><span>20%</span>vs last month</p>
                 </div>
                 <div class="graph">
-                    <img src="" alt="">
+                    <img src="images/greenChart.png" alt="">
                 </div>
             </div>
         </section>
