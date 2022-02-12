@@ -59,61 +59,73 @@
     <!-- Main dashboard -->
     <main class="mx-4">
         <section>
-            <div class="onboarding-text">
-                <h1>Welcome back, Olivia</h1>
-                <p>Track, manage and forecast your customers and orders</p>
+            <div class="mt-8">
+                <h1 class="text-gray-900 font-medium text-2xl">Welcome back, Olivia</h1>
+                <p class="text-gray-500">Track, manage and forecast your customers and orders</p>
             </div>
-            <div class="actions">
-                <button>
-                    <img src="images/import.svg" alt="">
+            <div class="flex space-x-3 my-6">
+                <button class="flex items-center rounded-lg border-2 px-4 py-2">
+                    <img class="pr-1" src="images/import.svg" alt="">
                     Import
                 </button>
-                <button>
-                    <img src="images/add.svg" alt="">
+                <button class="flex bg-purple-600 rounded-lg text-white items-center px-4 py-2">
+                    <img class="pr-1" src="images/add.svg" alt="">
                     Add
                 </button>
             </div>
         </section>
         
         <!-- Dashboard 3 Grid Visual section -->
-        <section>
-            <div>
-                <header>
-                    <h4>Total customers</h4>
+        <section class="space-y-4">
+            <div class="w-full rounded-lg border-2 px-4 py-5">
+                <header class="flex justify-between">
+                    <h4 class="font-medium text-gray-900 text-base mt-0.5">Total customers</h4>
                     <img src="images/moreIcon.svg" alt="">
                 </header>
-                <div class="text">
-                    <h1>2,420</h1>
-                    <img src="images/greenArrow.svg" alt=""><p><span>40%</span>vs last month</p>
-                </div>
-                <div class="graph">
-                    <img src="images/greenChart.png" alt="">
+                <div class="flex justify-between items-end mt-5">
+                    <div>
+                        <h1 class="text-gray-900 text-3xl font-bold mb-5">2,420</h1>
+                        <div class="flex">
+                            <img src="images/greenArrow.svg" alt=""><p class="text-gray-500 text-sm "><span class="font-medium text-green-700">40%</span> vs last month</p>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <img src="images/greenChart.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div>
-                <header>
-                    <h4>Members</h4>
+            <div class="w-full rounded-lg border-2 px-4 py-5">
+                <header class="flex justify-between">
+                    <h4 class="font-medium text-gray-900 text-base mt-0.5">Members</h4>
                     <img src="images/moreIcon.svg" alt="">
                 </header>
-                <div class="text">
-                    <h1>1,210</h1>
-                    <img src="images/redArrow.svg" alt=""><p><span>10%</span>vs last month</p>
-                </div>
-                <div class="graph">
-                    <img src="images/redChart.png" alt="">
+                <div class="flex justify-between items-end mt-5">
+                    <div>
+                        <h1 class="text-gray-900 text-3xl font-bold mb-5">1,210</h1>
+                        <div class="flex">
+                            <img src="images/redArrow.svg" alt=""><p class="text-gray-500 text-sm "><span class="font-medium text-red-700">10%</span> vs last month</p>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <img src="images/redChart.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div>
-                <header>
-                    <h4>Active now</h4>
+            <div class="w-full rounded-lg border-2 px-4 py-5">
+                <header class="flex justify-between">
+                    <h4 class="font-medium text-gray-900 text-base mt-0.5">Total customers</h4>
                     <img src="images/moreIcon.svg" alt="">
                 </header>
-                <div class="text">
-                    <h1>316</h1>
-                    <img src="images/greenArrow.svg" alt=""><p><span>20%</span>vs last month</p>
-                </div>
-                <div class="graph">
-                    <img src="images/greenChart.png" alt="">
+                <div class="flex justify-between items-end mt-5">
+                    <div>
+                        <h1 class="text-gray-900 text-3xl font-bold mb-5">36</h1>
+                        <div class="flex">
+                            <img src="images/greenArrow.svg" alt=""><p class="text-gray-500 text-sm "><span class="font-medium text-green-700">20%</span> vs last month</p>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <img src="images/greenChart.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
