@@ -76,7 +76,7 @@
         </section>
         
         <!-- Dashboard 3 Grid Visual section -->
-        <section class="space-y-4">
+        <section class="space-y-4 md:grid md:grid-cols-3 md:gap-4 md:space-y-0">
             <div class="w-full rounded-lg border-[1px] px-4 py-5 shadow-sm">
                 <header class="flex justify-between">
                     <h4 class="font-medium text-gray-900 text-base mt-0.5">Total customers</h4>
@@ -151,11 +151,22 @@
                     <input type="search" name="" id="" placeholder="Search">
                 </div>
                 <!-- Filters on mobile -->
-                <div class="flex justify-center w-full rounded-lg border-[1px] px-4 py-3 shadow-sm">
+                <button class="flex items-center justify-center text-gray-700 w-full rounded-lg border-[1px] px-4 py-3 shadow-sm">
                     <img class="pr-3" src="images/filters.svg" alt="">
-                    <span>Edit filters</span>
-                </div>          
+                    Edit filters
+                </button>          
         </section>
+        <!-- Tags -->
+        <div class="flex text-purple-700 my-4 space-x-2">
+            <button class="rounded-full flex items-center bg-purple-50 px-4 py-[3px] md:rounded-md">
+                All time 
+                <img class="pl-2" src="images/close.svg" alt="">
+            </button>
+            <button class="rounded-full flex items-center bg-purple-50 px-4 py-[3px] md:rounded-md">
+                US, AU, +4
+                <img class="pl-2" src="images/close.svg" alt="">
+            </button>
+        </div>
         <table class="table-auto">
             <thead>
               <tr>
