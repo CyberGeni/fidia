@@ -134,7 +134,7 @@
                 <!-- Search on mobile-->
                 <div class="flex w-full rounded-lg border-[1px] my-4 px-4 py-3 shadow-sm lg:w-fit">
                     <img class="pr-3" src="images/search.svg" alt="">
-                    <input type="search" name="" id="" placeholder="Search">
+                    <input class="focus:outline-none w-full"  type="search" name="" id="" placeholder="Search">
                 </div>
                 <!-- Filters on mobile -->
                 <button class="lg:hidden flex items-center justify-center text-gray-700 w-full rounded-lg border-[1px] px-4 py-3 shadow-sm">
@@ -157,221 +157,215 @@
                     </button>
                 </div>
         </section>  
-        <table class="table-auto text-left">
-            <thead>
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
               <tr>
-                <th><input type="checkbox" name="" id="">Company</th>
-                <th>License use</th>
-                <th>Status</th>
-                <th>Users</th>
-                <th>About</th>
-                <th></th>
+                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500"><input type="checkbox" name="" id="">Company</th>
+                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500">License use</th>
+                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500">Status</th>
+                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500">Users</th>
+                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500">About</th>
+                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500"></th>
+                <th scope="col" class="relative px-6 py-3"></th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="bg-white divide-y divide-gray-200">
               <tr>
-                <td class="flex flex-row">
-                    <div class="flex items-center">
-                        <input type="checkbox" name="" id="">
-                        <img src="images/catalog.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0 h-10 w-10">
+                      <img class="" src="" alt="">
                     </div>
-                    <div>
-                        <h5>Catalog</h5>
-                        <p>catalogapp.io</p>
+                    <div class="ml-4">
+                      <div class="text-sm font-medium text-gray-900"></div>
+                      <div class="text-sm text-gray-500"></div>
                     </div>
+                  </div>
                 </td>
-                <td>
-                    <progress min="0" max="100" value="85"></progress>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-500"></div>
                 </td>
-                <td>
-                    Customer
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
                 </td>
-                <td>
-                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-                </td>
-                <td>
-                    <h5>Content curating app</h5>
-                    <p>Brings all your news to one place</p>
-                </td>
-                <td>
-                    <img src="images/delete.svg" alt="">
-                    <img src="images/edit.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
                 </td>
               </tr>
               <tr>
-                <td class="flex flex-row">
-                    <div class="flex items-center">
-                        <input type="checkbox" name="" id="">
-                        <img src="images/catalog.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0 h-10 w-10">
+                      <img class="" src="" alt="">
                     </div>
-                    <div>
-                        <h5>Catalog</h5>
-                        <p>catalogapp.io</p>
+                    <div class="ml-4">
+                      <div class="text-sm font-medium text-gray-900"></div>
+                      <div class="text-sm text-gray-500"></div>
                     </div>
+                  </div>
                 </td>
-                <td>
-                    <progress min="0" max="100" value="85"></progress>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-500"></div>
                 </td>
-                <td>
-                    Customer
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
                 </td>
-                <td>
-                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-                </td>
-                <td>
-                    <h5>Content curating app</h5>
-                    <p>Brings all your news to one place</p>
-                </td>
-                <td>
-                    <img src="images/delete.svg" alt="">
-                    <img src="images/edit.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
                 </td>
               </tr>
               <tr>
-                <td class="flex flex-row">
-                    <div class="flex items-center">
-                        <input type="checkbox" name="" id="">
-                        <img src="images/catalog.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0 h-10 w-10">
+                      <img class="" src="" alt="">
                     </div>
-                    <div>
-                        <h5>Catalog</h5>
-                        <p>catalogapp.io</p>
+                    <div class="ml-4">
+                      <div class="text-sm font-medium text-gray-900"></div>
+                      <div class="text-sm text-gray-500"></div>
                     </div>
+                  </div>
                 </td>
-                <td>
-                    <progress min="0" max="100" value="85"></progress>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-500"></div>
                 </td>
-                <td>
-                    Customer
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
                 </td>
-                <td>
-                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-                </td>
-                <td>
-                    <h5>Content curating app</h5>
-                    <p>Brings all your news to one place</p>
-                </td>
-                <td>
-                    <img src="images/delete.svg" alt="">
-                    <img src="images/edit.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
                 </td>
               </tr>
               <tr>
-                <td class="flex flex-row">
-                    <div class="flex items-center">
-                        <input type="checkbox" name="" id="">
-                        <img src="images/catalog.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0 h-10 w-10">
+                      <img class="" src="" alt="">
                     </div>
-                    <div>
-                        <h5>Catalog</h5>
-                        <p>catalogapp.io</p>
+                    <div class="ml-4">
+                      <div class="text-sm font-medium text-gray-900"></div>
+                      <div class="text-sm text-gray-500"></div>
                     </div>
+                  </div>
                 </td>
-                <td>
-                    <progress min="0" max="100" value="85"></progress>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-500"></div>
                 </td>
-                <td>
-                    Customer
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
                 </td>
-                <td>
-                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-                </td>
-                <td>
-                    <h5>Content curating app</h5>
-                    <p>Brings all your news to one place</p>
-                </td>
-                <td>
-                    <img src="images/delete.svg" alt="">
-                    <img src="images/edit.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
                 </td>
               </tr>
               <tr>
-                <td class="flex flex-row">
-                    <div class="flex items-center">
-                        <input type="checkbox" name="" id="">
-                        <img src="images/catalog.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0 h-10 w-10">
+                      <img class="" src="" alt="">
                     </div>
-                    <div>
-                        <h5>Catalog</h5>
-                        <p>catalogapp.io</p>
+                    <div class="ml-4">
+                      <div class="text-sm font-medium text-gray-900"></div>
+                      <div class="text-sm text-gray-500"></div>
                     </div>
+                  </div>
                 </td>
-                <td>
-                    <progress min="0" max="100" value="85"></progress>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-500"></div>
                 </td>
-                <td>
-                    Customer
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
                 </td>
-                <td>
-                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-                </td>
-                <td>
-                    <h5>Content curating app</h5>
-                    <p>Brings all your news to one place</p>
-                </td>
-                <td>
-                    <img src="images/delete.svg" alt="">
-                    <img src="images/edit.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
                 </td>
               </tr>
               <tr>
-                <td class="flex flex-row">
-                    <div class="flex items-center">
-                        <input type="checkbox" name="" id="">
-                        <img src="images/catalog.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0 h-10 w-10">
+                      <img class="" src="" alt="">
                     </div>
-                    <div>
-                        <h5>Catalog</h5>
-                        <p>catalogapp.io</p>
+                    <div class="ml-4">
+                      <div class="text-sm font-medium text-gray-900"></div>
+                      <div class="text-sm text-gray-500"></div>
                     </div>
+                  </div>
                 </td>
-                <td>
-                    <progress min="0" max="100" value="85"></progress>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-500"></div>
                 </td>
-                <td>
-                    Customer
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
                 </td>
-                <td>
-                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-                </td>
-                <td>
-                    <h5>Content curating app</h5>
-                    <p>Brings all your news to one place</p>
-                </td>
-                <td>
-                    <img src="images/delete.svg" alt="">
-                    <img src="images/edit.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
                 </td>
               </tr>
               <tr>
-                <td class="flex flex-row">
-                    <div class="flex items-center">
-                        <input type="checkbox" name="" id="">
-                        <img src="images/catalog.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0 h-10 w-10">
+                      <img class="" src="" alt="">
                     </div>
-                    <div>
-                        <h5>Catalog</h5>
-                        <p>catalogapp.io</p>
+                    <div class="ml-4">
+                      <div class="text-sm font-medium text-gray-900"></div>
+                      <div class="text-sm text-gray-500"></div>
                     </div>
+                  </div>
                 </td>
-                <td>
-                    <progress min="0" max="100" value="85"></progress>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-500"></div>
                 </td>
-                <td>
-                    Customer
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
                 </td>
-                <td>
-                    <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-                </td>
-                <td>
-                    <h5>Content curating app</h5>
-                    <p>Brings all your news to one place</p>
-                </td>
-                <td>
-                    <img src="images/delete.svg" alt="">
-                    <img src="images/edit.svg" alt="">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
                 </td>
               </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0 h-10 w-10">
+                      <img class="" src="" alt="">
+                    </div>
+                    <div class="ml-4">
+                      <div class="text-sm font-medium text-gray-900"></div>
+                      <div class="text-sm text-gray-500"></div>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-500"></div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
+                </td>
+              </tr>
+  
+              <!-- More people... -->
+            </tbody>
+          </table>
               <tr>
                     <td>
                         <button class="px-4 py-2 rounded border border-gray-200">Previous</button>
