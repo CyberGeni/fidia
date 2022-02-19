@@ -26,6 +26,30 @@
     }
   </script>
 </head>
+<style>
+  /* custom progress bar styling */
+  progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e3e3e3;
+    overflow: hidden;
+    position: relative;
+  }
+  progress::-webkit-progress-bar {
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  progress::-webkit-progress-value {
+    background-color: #9333ea;
+    border-radius: 10px;
+    transition: width 0.2s ease;
+  }
+</style>
 <body class="font-[Inter] ">
     <!-- First (main) header-->
     <header class="mx-4 flex justify-between items-center h-[64px]">
@@ -157,21 +181,74 @@
                     </button>
                 </div>
         </section>  
+        <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"></div>
         <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
-              <tr>
-                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500"><input type="checkbox" name="" id="">Company</th>
+            <thead class="">
+              <tr class="">
+                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500"><input class="mr-3 w-4 h-4" type="checkbox" name="" id="">Company</th>
                 <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500">License use</th>
-                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500">Status</th>
-                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500">Users</th>
-                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500">About</th>
-                <th scope="col" class="px-6 py-3 text-left text-base font-medium text-gray-500"></th>
-                <th scope="col" class="relative px-6 py-3"></th>
+                <th scope="col" class="hidden md:inline md:px-6 md:py-3 md:text-left md:text-base md:font-medium md:text-gray-500">Status</th>
+                <th scope="col" class="hidden md:inline md:px-6 md:py-3 md:text-left md:text-base md:font-medium text-gray-500">Users</th>
+                <th scope="col" class="hidden md:inline md:px-6 md:py-3 md:text-left md:text-base md:font-medium md:text-gray-500">About</th>
+                <th scope="col" class="hidden md:inline md:px-6 md:py-3 md:text-left md:text-base md:font-medium md:text-gray-500"></th>
+                <th scope="col" class="hidden md:flex md:relative lg:px-6 lg:py-3"></th>
               </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-              <tr>
+              <tr scope="row" class="bg-gray-50 w-full">
+                <td class="px-6 py-2 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex items-center">
+                      <input class="mr-3 w-4 h-4" type="checkbox" name="" id="">
+                      <img class="" src="images/catalog.svg" alt="">
+                    </div>
+                    <div class="ml-3">
+                      <div class="text-sm font-medium text-gray-900">Catalog</div>
+                      <div class="text-sm text-gray-500">catalogapp.io</div>
+                    </div>
+                  </div>
+                </td>
                 <td class="px-6 py-4 whitespace-nowrap">
+                  <progress min="0" max="100" value="80" class="progress-bar-purple-500" role="progressbar"></progress>
+                </td>
+                <td class="hidden md:block px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Customer</span>
+                </td>
+                <td class="hidden md:blockpx-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
+                </td>
+                <td class="flex py-4 space-x-3">
+                  <img class="m-auto" src="images/delete.svg" alt="">
+                  <img src="images/edit.svg" alt="">
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-2 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex items-center">
+                      <input class="mr-3 w-4 h-4" type="checkbox" name="" id="">
+                      <img class="" src="images/circooles.svg" alt="">
+                    </div>
+                    <div class="ml-3">
+                      <div class="text-sm font-medium text-gray-900">Cirooles</div>
+                      <div class="text-sm text-gray-500">getcircooles.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <progress min="0" max="100" value="80" class="progress-bar-purple-500" role="progressbar"></progress>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-gray-800">Churned</span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-2 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="" src="" alt="">
@@ -195,7 +272,31 @@
                 </td>
               </tr>
               <tr>
+                <td class="px-6 py-2 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <div class="flex-shrink-0 h-10 w-10">
+                      <img class="" src="" alt="">
+                    </div>
+                    <div class="ml-4">
+                      <div class="text-sm font-medium text-gray-900"></div>
+                      <div class="text-sm text-gray-500"></div>
+                    </div>
+                  </div>
+                </td>
                 <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-500"></div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-2 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="" src="" alt="">
@@ -219,7 +320,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-2 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="" src="" alt="">
@@ -242,79 +343,7 @@
                   <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
                 </td>
               </tr>
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="flex items-center">
-                    <div class="flex-shrink-0 h-10 w-10">
-                      <img class="" src="" alt="">
-                    </div>
-                    <div class="ml-4">
-                      <div class="text-sm font-medium text-gray-900"></div>
-                      <div class="text-sm text-gray-500"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="text-sm text-gray-900"></div>
-                  <div class="text-sm text-gray-500"></div>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
-                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
-                </td>
-              </tr>
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="flex items-center">
-                    <div class="flex-shrink-0 h-10 w-10">
-                      <img class="" src="" alt="">
-                    </div>
-                    <div class="ml-4">
-                      <div class="text-sm font-medium text-gray-900"></div>
-                      <div class="text-sm text-gray-500"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="text-sm text-gray-900"></div>
-                  <div class="text-sm text-gray-500"></div>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
-                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
-                </td>
-              </tr>
-              <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="flex items-center">
-                    <div class="flex-shrink-0 h-10 w-10">
-                      <img class="" src="" alt="">
-                    </div>
-                    <div class="ml-4">
-                      <div class="text-sm font-medium text-gray-900"></div>
-                      <div class="text-sm text-gray-500"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="text-sm text-gray-900"></div>
-                  <div class="text-sm text-gray-500"></div>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"> Active </span>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"></td>
-                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900"></a>
-                </td>
-              </tr>
-              <tr>
+              <tr class="bg-gray-50">
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
@@ -363,9 +392,10 @@
                 </td>
               </tr>
   
-              <!-- More people... -->
+              <!-- More companies... -->
             </tbody>
           </table>
+        </div>
               <tr>
                     <td>
                         <button class="px-4 py-2 rounded border border-gray-200">Previous</button>
@@ -377,7 +407,6 @@
           <div>
             
           </div>
-          
     </main>
 </body>
 </html>
